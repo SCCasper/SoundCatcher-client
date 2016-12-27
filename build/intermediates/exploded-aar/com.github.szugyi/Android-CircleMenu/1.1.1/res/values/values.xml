@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView"><attr format="string" name="name"/></declare-styleable>
+    <declare-styleable name="CircleLayout"><attr format="reference" name="circleBackground"/><attr format="boolean" name="isRotating"/><attr format="integer" name="speed"/><attr name="firstChildPosition"><enum name="East" value="0"/><enum name="South" value="90"/><enum name="West" value="180"/><enum name="North" value="270"/></attr></declare-styleable>
+    <string name="app_name">CircleMenu</string>
+</resources>

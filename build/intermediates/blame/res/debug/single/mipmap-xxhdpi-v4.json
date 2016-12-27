@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\btn_exit_normal.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\btn_exit_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\img_global_twinkle.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\img_global_twinkle.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bg_global_bottom2.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\bg_global_bottom2.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bg_global_top.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\bg_global_top.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\btn_global_center_touchable.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\btn_global_center_touchable.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bg_photo_record2.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\bg_photo_record2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bg_photo_play2.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\bg_photo_play2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\btn_global_center_pressed.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\btn_global_center_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_global_exit_normal.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_global_exit_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_global_volume_normal.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_global_volume_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_global_record_active.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_global_record_active.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\btn_exit_pressed2.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\btn_exit_pressed2.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_global_pause_normal.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_global_pause_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_global_record_normal.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_global_record_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\splash.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bg_photo_exit2.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\bg_photo_exit2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\btn_exit_normal2.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\btn_exit_normal2.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bg_global_circle.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\bg_global_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_global_play_active.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_global_play_active.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bg_photo_pause2.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\bg_photo_pause2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bg_photo_volume.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\bg_photo_volume.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_global_play_normal.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_global_play_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\img_global_logo.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\img_global_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bg_photo_volume2.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\bg_photo_volume2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_global_exit_active.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_global_exit_active.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\btn_exit_pressed.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\btn_exit_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bg_global_bottom.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\bg_global_bottom.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_global_volume_active.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_global_volume_active.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\btn_global_center_inactive.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\btn_global_center_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\btn_global_center_normal.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\btn_global_center_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_global_pause_active.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\SoundCatcher-client\\src\\main\\res\\mipmap-xxhdpi\\ic_global_pause_active.png"
+    }
+]

@@ -63,7 +63,9 @@ public class Main extends Thread{
             audioHandler.writePCM(testBuffer);
 
             pre = test;
-            */
+
+
+         */
 
         }
         udpNetwork.exitNetwork();

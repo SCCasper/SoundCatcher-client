@@ -20,7 +20,6 @@ public class AudioRecord{
     private static long byteRate = channels * AudioSampleRate * encodingBit / 8;
     private String PcmFilename = "";
     private String WavFilename= "";
-    private Main main;
 
 
 
@@ -38,16 +37,23 @@ public class AudioRecord{
     private FileInputStream in = null;
     private FileOutputStream dOut = null;
 
-    public boolean isRecording = false;
+    private boolean isRecording = false;
 
 
     public AudioRecord()
     {
         super();
         cpyData = new byte[BLOCK_SIZE];
-
-
     }
+
+    public void setRecordFlag(boolean recordFlag){
+        isRecording = recordFlag;
+    }
+
+    public boolean getRecordFlag(){
+        return isRecording;
+    }
+
 
     private void createRecordFile(){
         PcmFilename = AudioFile.getRawFilePath();
@@ -65,12 +71,14 @@ public class AudioRecord{
         createRecordFile();
         try {
             dOut = new FileOutputStream(oldFile);
+            setRecordFlag(true);
         }catch(FileNotFoundException e){
 
         }
     }
 
     public void recordStop(){
+        setRecordFlag(false);
         try{
             if(dOut != null) {
                 Log.d("MYLOG", "dOUT !NULL");
@@ -143,6 +151,11 @@ public class AudioRecord{
         }catch(IOException ex){
 
         }
+    }
+
+    public boolean initRecordFlag(){
+        isRecording = false;
+        return isRecording;
     }
 
 

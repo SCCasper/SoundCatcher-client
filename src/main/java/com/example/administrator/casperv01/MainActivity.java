@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -47,8 +48,8 @@ public class MainActivity extends AppCompatActivity
 
     private UdpNetwork udpNetwork;
     private AudioHandler audioHandler;
-    private AudioRecord audioRecoder;
-    private Main main;
+    private AudioRecord audioRecord;
+    private AudioBuffer [] audioBuffers;
 
 
     private boolean [] positionFlag = {true, false, false, false, false};
@@ -73,11 +74,36 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void initClass(){
-        udpNetwork = new UdpNetwork();
-        audioHandler = new AudioHandler();
-        audioRecoder = new AudioRecord();
+        audioBuffers = new AudioBuffer[AudioBuffer.NUM_OF_BUFFER];
 
-        main = new Main(udpNetwork, audioHandler, audioRecoder);
+        //Buffer init
+        for(int i = 0; i < AudioBuffer.NUM_OF_BUFFER; i++){
+            audioBuffers[i]= new AudioBuffer();
+        }
+
+        audioHandler = new AudioHandler(audioBuffers);
+        udpNetwork = new UdpNetwork(audioBuffers);
+        audioRecord = new AudioRecord();
+
+        //Set AudioRecord
+        audioHandler.setAudioRecord(audioRecord);
+
+    }
+
+    //Therad isAlive
+    public boolean isAlive(){
+        if(((udpNetwork.getState() != Thread.State.TERMINATED)&& (audioHandler.getState() != Thread.State.TERMINATED))){
+            return true;
+        }
+        return false;
+    }
+
+    //Start Program
+    public void startProgram(){
+
+        udpNetwork.start();
+        audioHandler.start();
+
     }
 
 
@@ -115,7 +141,7 @@ public class MainActivity extends AppCompatActivity
 
 
         initClass();
-        main.start();
+        startProgram();
 
 
 
@@ -134,14 +160,12 @@ public class MainActivity extends AppCompatActivity
                         playImage.setBackgroundResource(R.mipmap.ic_global_play_active);
                         mainLayout.setBackgroundResource(R.mipmap.bg_photo_play2);
                         if(audioHandler.getAudioState() == AudioTrack.PLAYSTATE_PAUSED) {
-
                             audioHandler.play();
                             break;
                         }
 
-                        else if(main.getState() == Thread.State.TERMINATED){
+                        else if(isAlive() == false){
                             initClass();
-                            main.start();
                             audioHandler.play();
 
                             break;
@@ -230,8 +254,9 @@ public class MainActivity extends AppCompatActivity
                         setPositionFlag(positionFlag, 3);
                         circleLayout.setRotating(false);
                         circleLayout.setEnabled(false);
-                        audioRecoder.recordStart();
-                        main.setRecordFlag(true);
+                        audioRecord.recordStart();
+
+                        //레코딩
                         Log.d("Log", "RECORD FLAG TRUE");
 
 
@@ -258,9 +283,10 @@ public class MainActivity extends AppCompatActivity
                     circleLayout.setRotating(true);
                     centerCircle.setBackgroundResource(R.mipmap.btn_global_center_normal);
                     circleLayout.setEnabled(true);
-                    main.setRecordFlag(false);
+
+                    //레코딩
                     Toast.makeText(MainActivity.this, "파일을 저장 중", Toast.LENGTH_LONG).show();
-                    audioRecoder.recordStop();
+                    audioRecord.recordStop();
                     Toast.makeText(MainActivity.this, "파일 저장 완료", Toast.LENGTH_LONG).show();
                     explainMsg.setText("녹음을 하시려면 아이콘을 눌러주세요");
 
@@ -342,8 +368,13 @@ public class MainActivity extends AppCompatActivity
                 false).setPositiveButton("Yes",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        if (main.getState() == Thread.State.RUNNABLE) {
-                            main.setAliveFlag(false);
+                        if (isAlive() == true) {
+                            //앱 종료, 쓰레드 종료
+                            udpNetwork.exitNetwork();
+                            udpNetwork.setNetworkFlag(false);
+                            audioHandler.setAudioFlag(false);
+
+
                         }
                         MainActivity.this.finish();
                         // Action for 'Yes' Button
@@ -414,8 +445,12 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         }
-        else if(main.getState() == Thread.State.RUNNABLE) {
-            main.setAliveFlag(false);
+        else if(isAlive() == true) {
+            //앱 종료. // 쓰레드 종료
+            udpNetwork.exitNetwork();
+            udpNetwork.setNetworkFlag(false);
+            audioHandler.setAudioFlag(false);
+
         }
         else {
             super.onBackPressed();

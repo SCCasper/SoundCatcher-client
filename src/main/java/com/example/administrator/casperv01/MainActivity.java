@@ -445,15 +445,8 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         }
-        else if(isAlive() == true) {
-            //앱 종료. // 쓰레드 종료
-            udpNetwork.exitNetwork();
-            udpNetwork.setNetworkFlag(false);
-            audioHandler.setAudioFlag(false);
-
-        }
-        else {
-            super.onBackPressed();
+        else{
+            exitDialog();
         }
         finish();
     }

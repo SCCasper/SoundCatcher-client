@@ -370,7 +370,6 @@ public class MainActivity extends AppCompatActivity
                     public void onClick(DialogInterface dialog, int id) {
                         if (isAlive() == true) {
                             //앱 종료, 쓰레드 종료
-                            udpNetwork.exitNetwork();
                             udpNetwork.setNetworkFlag(false);
                             audioHandler.setAudioFlag(false);
 
@@ -445,10 +444,12 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         }
-        else{
+        else if(isAlive() == true) {
             exitDialog();
         }
-        finish();
+        else {
+            super.onBackPressed();
+        }
     }
 
     @Override

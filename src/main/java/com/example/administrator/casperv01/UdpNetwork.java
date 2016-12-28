@@ -95,8 +95,10 @@ public class UdpNetwork extends Thread{
 
     public void exitNetwork(){
         try {
+            Log.d("Casper", "into Exit Network");
             setSendMsg("EXIT");
             sendSocket.send(sendPacket);
+            Log.d("Casper", "Send Packet");
             stopNetwork();
 
         }catch(IOException e){
@@ -142,5 +144,6 @@ public class UdpNetwork extends Thread{
             audioBuffers[writeIndex].setBuffer(readAudioSample());
             writeIndex = (writeIndex + 1) % AudioBuffer.NUM_OF_BUFFER;
         }
+        exitNetwork();
     }
 }

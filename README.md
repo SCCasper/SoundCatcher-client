@@ -1,6 +1,4 @@
 # SoundCatcher Client   
-### 담당교수님
-- 황기태 교수님 <br/>
 
 ### 구성원
 - 최지훈 : Streaming Server 설계 및 구현
